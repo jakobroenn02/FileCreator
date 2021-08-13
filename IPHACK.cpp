@@ -21,7 +21,9 @@ int main()
 {   
     wstring currentDesktop = GetUserDesktopPath();
     Sleep(4000);
-    ofstream myfile(currentDesktop);
+    wstring lastname = L"/suprise.txt";
+    wstring filename = currentDesktop + lastname;
+    ofstream myfile(filename);
     if (myfile.is_open() == false) {
         cout << "File creation failed";
         return 0;

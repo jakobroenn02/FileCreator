@@ -52,11 +52,7 @@ int main()
         return 0;
     }
     myfile << R"(
-                 ##########################
-                 #                        #
-                 #   Your Pc has been:    #
-                 #         Hacked!        #
-                 ##########################                        
+                HEJ!                     
 )";
     myfile.close();
 
